@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\adamp\\documents\\unreal projects\\sanboxgame\\plugins\\advancedsteamsessions\\source\\advancedsteamsessions\\private\\advancedsteamsessions.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\adamp\\documents\\unreal projects\\sanboxgame\\intermediate\\build\\win64\\x64\\sanboxgame\\development\\engine\\sharedpch.engine.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "c:\\users\\adamp\\documents\\unreal projects\\sanboxgame\\plugins\\advancedsteamsessions\\intermediate\\build\\win64\\x64\\unrealgame\\development\\advancedsteamsessions\\definitions.advancedsteamsessions.h",
+            "c:\\users\\adamp\\documents\\unreal projects\\sanboxgame\\plugins\\advancedsteamsessions\\source\\advancedsteamsessions\\classes\\advancedsteamsessions.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
