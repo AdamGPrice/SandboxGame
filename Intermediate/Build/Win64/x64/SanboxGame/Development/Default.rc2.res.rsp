@@ -55,8 +55,8 @@
 /DWITH_PUSH_MODEL=0
 /DWITH_CEF3=1
 /DWITH_LIVE_CODING=1
-/DUE_LIVE_CODING_ENGINE_DIR="C:\\Program Files\\Epic Games\\UE_5.4\\Engine"
-/DUE_LIVE_CODING_PROJECT="C:\\Users\\adamp\\Documents\\Unreal Projects\\SanboxGame\\SanboxGame.uproject"
+/DUE_LIVE_CODING_ENGINE_DIR="S:\\UE_5.4\\Engine"
+/DUE_LIVE_CODING_PROJECT="C:\\Users\\micha\\Documents\\Unreal Projects\\SandboxGame\\SanboxGame.uproject"
 /DWITH_CPP_MODULES=0
 /DWITH_CPP_COROUTINES=0
 /DWITH_PROCESS_PRIORITY_CONTROL=0
@@ -66,7 +66,7 @@
 /DUBT_COMPILED_TARGET=Game
 /DUE_APP_NAME="UnrealGame"
 /DUE_WARNINGS_AS_ERRORS=0
-/DUE_ENGINE_DIRECTORY="../../../../../../../Program Files/Epic Games/UE_5.4/Engine/"
+/DUE_ENGINE_DIRECTORY="S:/UE_5.4/Engine/"
 /DNDIS_MINIPORT_MAJOR_VERSION=0
 /DWIN32=1
 /D_WIN32_WINNT=0x0601
@@ -84,5 +84,5 @@
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_NAME="Third Person BP Game Template"
 /DPROJECT_PRODUCT_IDENTIFIER=SanboxGame
-/fo "C:\Users\adamp\Documents\Unreal Projects\SanboxGame\Intermediate\Build\Win64\x64\SanboxGame\Development\Default.rc2.res"
+/fo "C:\Users\micha\Documents\Unreal Projects\SandboxGame\Intermediate\Build\Win64\x64\SanboxGame\Development\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"
