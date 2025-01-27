@@ -1,6 +1,88 @@
 {
 	"Contents": [
 		{
+			"File": "../../../SanboxGame/Plugins/AdvancedSessions/AdvancedSessions.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 0,
+				"VersionName": "5.4",
+				"FriendlyName": "Advanced Sessions",
+				"Description": "Adds new blueprint functions to handle more advanced session operations.",
+				"Category": "Advanced Sessions Plugin",
+				"CreatedBy": "Joshua Statzer",
+				"CreatedByURL": "N/A",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "AdvancedSessions",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "OnlineSubsystem",
+						"Enabled": true
+					},
+					{
+						"Name": "OnlineSubsystemUtils",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../SanboxGame/Plugins/AdvancedSteamSessions/AdvancedSteamSessions.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 0,
+				"VersionName": "5.4",
+				"FriendlyName": "Advanced Steam Sessions",
+				"Description": "Adds new blueprint functions to handle more advanced session operations in Steam. REQUIRES ADVANCED SESSIONS",
+				"Category": "Advanced Sessions Plugin",
+				"CreatedBy": "Joshua Statzer",
+				"CreatedByURL": "N/A",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "AdvancedSteamSessions",
+						"Type": "Runtime",
+						"LoadingPhase": "Default"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "AdvancedSessions",
+						"Enabled": true
+					},
+					{
+						"Name": "OnlineSubsystem",
+						"Enabled": true
+					},
+					{
+						"Name": "OnlineSubsystemSteam",
+						"Enabled": true
+					},
+					{
+						"Name": "OnlineSubsystemUtils",
+						"Enabled": true
+					},
+					{
+						"Name": "SteamShared",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
 			"File": "../../../Engine/Plugins/2D/Paper2D/Paper2D.uplugin",
 			"Descriptor": 
 			{
@@ -339,63 +421,6 @@
 					},
 					{
 						"Name": "FullBodyIK",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/Bridge/Bridge.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 44,
-				"VersionName": "2024.0.5",
-				"FriendlyName": "Bridge",
-				"Description": "Megascans Link for Quixel Bridge.",
-				"Category": "Editor",
-				"CreatedBy": "Quixel",
-				"CreatedByURL": "https://www.quixel.se",
-				"DocsURL": "https://support.fab.com/s/?ProductOrigin=Quixeltier1",
-				"MarketplaceURL": "",
-				"SupportURL": "https://support.fab.com/s/?ProductOrigin=Quixeltier1",
-				"EngineVersion": "5.4.0",
-				"EnabledByDefault": true,
-				"CanContainContent": true,
-				"SupportedTargetPlatforms": [
-					"Win64",
-					"Mac",
-					"Linux"
-				],
-				"Modules": [
-					{
-						"Name": "Bridge",
-						"Type": "Editor",
-						"LoadingPhase": "PostDefault",
-						"PlatformAllowList": [
-							"Win64",
-							"Mac",
-							"Linux"
-						]
-					},
-					{
-						"Name": "MegascansPlugin",
-						"Type": "Editor",
-						"LoadingPhase": "PostDefault",
-						"PlatformAllowList": [
-							"Win64",
-							"Mac",
-							"Linux"
-						]
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "EditorScriptingUtilities",
-						"Enabled": true
-					},
-					{
-						"Name": "MetaHumanProjectUtilities",
 						"Enabled": true
 					}
 				]
@@ -1872,38 +1897,6 @@
 			}
 		},
 		{
-			"File": "../../../Engine/Plugins/Experimental/MetaHuman/MetaHumanProjectUtilities/MetaHumanProjectUtilities.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "MetaHuman Project Utilities",
-				"Description": "Utilities for managing and editing MetaHumans within a project.",
-				"Category": "Editor",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "https://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"CanContainContent": true,
-				"IsExperimentalVersion": true,
-				"Modules": [
-					{
-						"Name": "MetaHumanProjectUtilities",
-						"Type": "Editor",
-						"LoadingPhase": "Default"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "EditorScriptingUtilities",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
 			"File": "../../../Engine/Plugins/Experimental/OpenImageDenoise/OpenImageDenoise.uplugin",
 			"Descriptor": 
 			{
@@ -2281,52 +2274,6 @@
 				"Plugins": [
 					{
 						"Name": "PythonScriptPlugin",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/Fab/Fab.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 2,
-				"VersionName": "0.0.2",
-				"FriendlyName": "Fab",
-				"Description": "Fab Plugin",
-				"Category": "Other",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EngineVersion": "5.4.0",
-				"EnabledByDefault": true,
-				"CanContainContent": true,
-				"SupportedTargetPlatforms": [
-					"Win64",
-					"Mac",
-					"Linux"
-				],
-				"Modules": [
-					{
-						"Name": "Fab",
-						"Type": "Editor",
-						"LoadingPhase": "PostDefault"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "Interchange",
-						"Enabled": true
-					},
-					{
-						"Name": "EditorScriptingUtilities",
-						"Enabled": true
-					},
-					{
-						"Name": "EOSShared",
 						"Enabled": true
 					}
 				]
@@ -3172,40 +3119,6 @@
 					{
 						"Name": "LevelSequenceEditor",
 						"Enabled": true
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/Online/EOSShared/EOSShared.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "EOS Shared",
-				"Description": "Responsible for init/shutdown of the EOSSDK runtime library.",
-				"Category": "Online Platform",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "https://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": false,
-				"CanContainContent": false,
-				"Modules": [
-					{
-						"Name": "EOSShared",
-						"Type": "Runtime",
-						"LoadingPhase": "PostConfigInit",
-						"PlatformAllowList": [
-							"Android",
-							"IOS",
-							"Linux",
-							"LinuxArm64",
-							"Mac",
-							"Win64"
-						]
 					}
 				]
 			}
@@ -4952,88 +4865,6 @@
 						"Name": "CsvMetrics",
 						"Type": "Runtime",
 						"LoadingPhase": "Default"
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../SanboxGame/Plugins/AdvancedSessions/AdvancedSessions.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 0,
-				"VersionName": "5.4",
-				"FriendlyName": "Advanced Sessions",
-				"Description": "Adds new blueprint functions to handle more advanced session operations.",
-				"Category": "Advanced Sessions Plugin",
-				"CreatedBy": "Joshua Statzer",
-				"CreatedByURL": "N/A",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"CanContainContent": false,
-				"Modules": [
-					{
-						"Name": "AdvancedSessions",
-						"Type": "Runtime",
-						"LoadingPhase": "PreDefault"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "OnlineSubsystem",
-						"Enabled": true
-					},
-					{
-						"Name": "OnlineSubsystemUtils",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../SanboxGame/Plugins/AdvancedSteamSessions/AdvancedSteamSessions.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 0,
-				"VersionName": "5.4",
-				"FriendlyName": "Advanced Steam Sessions",
-				"Description": "Adds new blueprint functions to handle more advanced session operations in Steam. REQUIRES ADVANCED SESSIONS",
-				"Category": "Advanced Sessions Plugin",
-				"CreatedBy": "Joshua Statzer",
-				"CreatedByURL": "N/A",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"CanContainContent": false,
-				"Modules": [
-					{
-						"Name": "AdvancedSteamSessions",
-						"Type": "Runtime",
-						"LoadingPhase": "Default"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "AdvancedSessions",
-						"Enabled": true
-					},
-					{
-						"Name": "OnlineSubsystem",
-						"Enabled": true
-					},
-					{
-						"Name": "OnlineSubsystemSteam",
-						"Enabled": true
-					},
-					{
-						"Name": "OnlineSubsystemUtils",
-						"Enabled": true
-					},
-					{
-						"Name": "SteamShared",
-						"Enabled": true
 					}
 				]
 			}
